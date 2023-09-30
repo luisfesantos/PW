@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,77 +8,177 @@
 </head>
 
 <body>
-<h1>Ficha Cadastral - Vestibulinho ETEC</h1>
-<legend>1 - Identificação</legend>
-<form>
-    <label>Código:
+    <h1>Ficha Cadastral - Vestibulinho ETEC</h1>
+    
+    <!--Identificação-->
+    <div>
+        <fieldset>
+        <legend>1 - Identificação</legend>
+        <form>
+            <label>Código:
+                <br>
+                <input type="number" min="1" max="100">
+            </label>
+            <br><br>
+            <label>Nome:
+                <br>
+                <input type="text">
+            </label>
+            <br><br>
+            <label>Apelido:
+                <br>
+                <input type="text">
+            </label>
+            <br><br>
+            <label>Email:
+                <br>
+                <input type="email">
+            </label>
+            <br><br>
+            <label>Data de Nascimento:
+                <br>
+                <input type="date">
+            </label>
+            <br><br>
+            <label>CPF:
+                <br>
+                <input type="number">
+            </label>
+            <br><br>
+            <label>RG:
+                <br>
+                <input type="number">
+            </label>
+            <br><br>
+            <label>UF:</label>
+            <br>
+            <select>
+                <option selected>SP</option>
+                <option>RJ</option>
+                <option>MG</option>
+                <option>GO</option>
+                <option>AM</option>
+                <option>MT</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>PR</option>
+                <option>MS</option>
+                <option>PB</option>
+                <option>PI</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SE</option>
+                <option>TO</option>
+            </select>
+            <br><br>
+            <label>Município:
+                <br>
+                <input type="text">
+            </label>
+        </fieldset>
         <br>
-        <input type="number">
-    </label>
-    <br><br>
-    <label>Nome:
-        <br>
-        <input type="text">
-    </label>
-    <br><br>
-    <label>Apelido:
-        <br>
-        <input type="text">
-    </label>
-    <br><br>
-    <label>Email:
-        <br>
-        <input type="email">
-    </label>
-    <br><br>
-    <label>Data de Nascimento:
-        <br>
-        <input type="date">
-    </label>
-    <br><br>
-    <label>CPF:
-        <br>
-        <input type="number">
-    </label>
-    <br><br>
-    <label>RG:
-        <br>
-        <input type="number">
-    </label>
-    <br><br>
-    <label>UF:</label>
+    </div>
+    
+    <!--Dados do Curso-->
+    <div>
+    <fieldset>
+    <legend>2 - Dados do Curso</legend>
+        <label>Selecione o curso desejado:
+            <br>
+            <input type="radio" name="cursos">Desenvolvimento de Sistema
+            <input type="radio" name="cursos">Elétrica
+            <input type="radio" name="cursos">Enfermagem
+            <input type="radio" name="cursos" checked>Mecânica
+            <input type="radio" name="cursos">Mecatrônica
+        </label>
+        <br><br>
+        <label>Selecione o período desejado:
+            <br>
+            <input type="radio" name="periodo">Manhã
+            <input type="radio" name="periodo">Tarde
+            <input type="radio" name="periodo" checked>Noite
+        </label>
+        <br><br>
+        <label>Selecione as disciplinas de sua preferência:
+            <br>
+            <input type="checkbox">Artes
+            <input type="checkbox">Educação Física
+            <input type="checkbox">Filosofia
+            <input type="checkbox">Sociologia
+            <input type="checkbox">Inglês
+            <input type="checkbox">Física
+            <input type="checkbox">Química
+            <input type="checkbox">Biologia
+            <input type="checkbox">Geografia
+            <input type="checkbox">História
+            <input type="checkbox">Matemática
+            <input type="checkbox">Português
+        </label>
+    </fieldset>
     <br>
-    <select>
-        <option selected>SP</option>
-        <option>RJ</option>
-        <option>MG</option>
-        <option>GO</option>
-        <option>AM</option>
-        <option>MT</option>
-        <option>AC</option>
-        <option>AL</option>
-        <option>AP</option>
-        <option>BA</option>
-        <option>CE</option>
-        <option>DF</option>
-        <option>ES</option>
-        <option>PR</option>
-        <option>MS</option>
-        <option>PB</option>
-        <option>PI</option>
-        <option>RN</option>
-        <option>RS</option>
-        <option>RO</option>
-        <option>RR</option>
-        <option>SC</option>
-        <option>SE</option>
-        <option>TO</option>
-    </select>
-    <br><br>
-    <label>Município:
+    </div>
+
+    <!--Orientações-->
+    <div>
+    <fieldset>
+    <legend>3 - Orientações</legend>
+        <p>Realização da Prova</p>
+        <ol>
+            <li>Data: 13/03/2023</li>
+            <li>Horário: 19h00</li>
+            <li>Local: Etec</li>
+        </ol>
+        <p>Favor trazer os seguintes itens para a realização da prova:</p>
+        <ul>
+            <li>Lápis</li>
+            <li>Borracha</li>
+            <li>Caneta Azul ou Preta</li>
+        </ul>
+    </fieldset>
+    <br>
+    </div>
+
+    <!--Referência Familiar-->
+    <div>
+    <fieldset>
+    <legend>Referência Familiar</legend>
+        <table>
+            <tr>
+                <th>Parentesco</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+            <tr>
+                <td>Pai</td>
+                <td>Flávio de Arruda</td>
+                <td>(16) 9.9876-5432</td>
+            </tr>
+            <tr>
+                <td>Mãe</td>
+                <td>Silvia de Arruda</td>
+                <td>(16) 9.1234-5678</td>
+            </tr>
+            <tr>
+                <td>Avó</td>
+                <td>Isabel Silva</td>
+                <td>(16) 9.9741-5896</td>
+            </tr>
+        </table>
+    </fieldset>
+        <hr>
+        <input type="reset" value="Cancelar">
         <br>
-        <input type="text">
-    </label>
-</form>
+        <input type="submit" value="Confirmar">
+        </form>
+    </div>
 </body>
+
 </html>
